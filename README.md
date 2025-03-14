@@ -8,17 +8,13 @@ The **Driver Fatigue Monitoring System (SFC)** is an advanced solution designed 
 
 When drowsiness is detected, **immediate alerts** (sound, vibration, or visual) are activated to help the driver stay alert or take a break
 
----
-
 ##  **Why is this system essential?**
 - **18%** of fatal accidents are linked to driver fatigue
 - **6,700 deaths** in 2021 in the U.S. were caused by drowsy driving
 - After **20 hours without sleep**, a driver’s performance is as impaired as having an illegal blood alcohol level
 
-💡 **Common solutions like drinking coffee or listening to music are ineffective**  
+ **Common solutions like drinking coffee or listening to music are ineffective**  
 Only continuous, objective monitoring can prevent fatigue-related crashes
-
----
 
 ##  **System Architecture**
 The SFC consists of **three main components**:
@@ -49,10 +45,8 @@ The SFC consists of **three main components**:
 - **Seat or steering wheel vibration**
 - **Message display on the dashboard screen**
 
----
-
 ##  **Installation**
-### **1️⃣ Hardware Requirements**
+### **1️ Hardware Requirements**
 - **Raspberry Pi 4 (minimum 4GB RAM)**
 - **IR Camera (NoIR Camera Module or IR Webcam)**
 - **Buzzer and/or LED for alerts**
