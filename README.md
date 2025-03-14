@@ -6,6 +6,9 @@ The **Driver Fatigue Monitoring System (SFC)** is an advanced solution designed 
 - **Frequent yawning**
 - **Abnormal head tilt**
 
+**Link to Documentation on Canva**
+[SomnoCam](https://www.canva.com/design/DAGhVM_YV_U/DUiCkND-jsdqbEHmV9HLlg/edit?utm_content=DAGhVM_YV_U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 When drowsiness is detected, **immediate alerts** (sound, vibration, or visual) are activated to help the driver stay alert or take a break
 
 ##  **Why is this system essential?**
