@@ -37,6 +37,6 @@ The system architecture for the Driver Fatigue Monitoring System comprises hardw
 5. **Output:** Alerts are displayed on-screen and optionally logged for future review
 
 ## Link to Documentation on Canva
-[SomnoCam Canva Doc]([URL](https://www.canva.com/design/DAGhVM_YV_U/DUiCkND-jsdqbEHmV9HLlg/edit?utm_content=DAGhVM_YV_U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
+[SomnoCam Canva Doc](https://www.canva.com/design/DAGhVM_YV_U/DUiCkND-jsdqbEHmV9HLlg/edit?utm_content=DAGhVM_YV_U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 leave a comment if you have any suggestions
