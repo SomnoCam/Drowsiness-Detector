@@ -31,8 +31,8 @@ This guide explains how to set up the hardware and software for the Driver Fatig
 ### Environment Setup:
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/Driver-Fatigue-Monitoring-System.git
-   cd Driver-Fatigue-Monitoring-System
+   git clone https://github.com/SomnoCam/Drowsiness-Detector.git
+   cd Drowsiness-Detector
    
 2. **Install Dependencies:**
 

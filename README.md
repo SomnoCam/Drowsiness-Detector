@@ -1,18 +1,65 @@
-# Driver Fatigue Monitoring System
+# **Driver Fatigue Monitoring System (SFC)**
 
-## Overview
-The Driver Fatigue Monitoring System is a real-time solution designed to detect driver drowsiness using computer vision and machine learning. Running on a Raspberry Pi 4 with an IR-enabled camera and written in Python, the system calculates the Eye Aspect Ratio (EAR), Mouth Aspect Ratio (MAR), and estimates head pose to determine if the driver is drowsy. If fatigue is detected, it triggers immediate alerts (visual, audio, or tactile) to help prevent accidents.
+##  **Introduction**
+The **Driver Fatigue Monitoring System (SFC)** is an advanced solution designed to detect driver drowsiness and issue real-time alerts to prevent accidents caused by fatigue. The system continuously monitors **signs of drowsiness**, such as:
+- **Prolonged eye closure**
+- **Frequent yawning**
+- **Abnormal head tilt**
 
-## Features
-- Real-time face and landmark detection using OpenCV and dlib.
-- Calculation of EAR for monitoring eye closure.
-- Calculation of MAR for detecting yawning.
-- Head pose estimation to detect head nodding.
-- Edge computing on a Raspberry Pi, ensuring low-latency operation.
-- Modular design for easy future upgrades and integration.
+When drowsiness is detected, **immediate alerts** (sound, vibration, or visual) are activated to help the driver stay alert or take a break
 
-## Installation
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/Driver-Fatigue-Monitoring-System.git
-   cd Driver-Fatigue-Monitoring-System
+---
+
+##  **Why is this system essential?**
+- **18%** of fatal accidents are linked to driver fatigue
+- **6,700 deaths** in 2021 in the U.S. were caused by drowsy driving
+- After **20 hours without sleep**, a driver’s performance is as impaired as having an illegal blood alcohol level
+
+💡 **Common solutions like drinking coffee or listening to music are ineffective**  
+Only continuous, objective monitoring can prevent fatigue-related crashes
+
+---
+
+##  **System Architecture**
+The SFC consists of **three main components**:
+
+### **1. Infrared (IR) Camera **
+- Continuously captures the driver’s face
+- Works **both day and night**
+- **Compatible with glasses** (minimizing reflection issues)
+
+### **2. Edge AI Processing Unit **
+- Runs real-time fatigue detection algorithms
+- Compatible with:
+  - **Raspberry Pi**
+  - **NVIDIA Jetson** (for AI acceleration)
+- **Advantages:**
+  - No Internet connection required
+  - Ultra-fast processing with low latency
+
+### **3. Detection Algorithms **
+- **Facial landmark detection** with OpenCV and deep learning
+- **Eye Aspect Ratio (EAR):** Identifies prolonged eye closure
+- **Mouth Aspect Ratio (MAR):** Detects yawning
+- **Head Pose Analysis:**
+  - If the head tilts forward or sideways → Increased fatigue risk.
+
+### **4. Alert System **
+- **Sound alerts** (buzzer or voice prompt
+- **Seat or steering wheel vibration**
+- **Message display on the dashboard screen**
+
+---
+
+##  **Installation**
+### **1️⃣ Hardware Requirements**
+- **Raspberry Pi 4 (minimum 4GB RAM)**
+- **IR Camera (NoIR Camera Module or IR Webcam)**
+- **Buzzer and/or LED for alerts**
+- **(Optional) Accelerometer/Gyroscope for additional head movement data**
+
+### ** Software Installation**
+#### **Clone the GitHub Repository**
+```bash
+git clone https://github.com/SomnoCam/Driver-Fatigue-Monitoring-System.git
+cd Driver-Fatigue-Monitoring-System
