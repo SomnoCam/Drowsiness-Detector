@@ -13,16 +13,16 @@ Each section includes:
 - **Visualization**
 - **Pseudocode Implementation**
 
----
-
-## **Eye Aspect Ratio (EAR) **
+## **Eye Aspect Ratio (EAR)**
 ### **Objective**
 The **Eye Aspect Ratio (EAR)** measures **eye openness** to detect prolonged eye closure, which is a strong indicator of drowsiness
 
 ### **Mathematical Formula**
+
 $$
 EAR = \frac{\|P2 - P6\| + \|P3 - P5\|}{2 \times \|P1 - P4\|}
 $$
+
 Where:
 - \( P1 \) and \( P4 \) are the left and right corners of the eye (horizontal distance)
 - \( P2, P3, P5, P6 \) are vertical points defining the top and bottom eyelid
@@ -33,7 +33,6 @@ Where:
 3. Compute the **horizontal distance** between **P1 and P4**
 4. Apply the EAR formula.
 5. If **EAR < 0.17** for more than 1 second → **Drowsiness detected**
-
 
 ## Mouth Aspect Ratio (MAR)
 
