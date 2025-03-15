@@ -24,8 +24,8 @@ EAR = \frac{\|P2 - P6\| + \|P3 - P5\|}{2 \times \|P1 - P4\|}
 $$
 
 Where:
-- \( P1 \) and \( P4 \) are the left and right corners of the eye (horizontal distance)
-- \( P2, P3, P5, P6 \) are vertical points defining the top and bottom eyelid
+- P1 and P4 are the left and right corners of the eye (horizontal distance)
+- P2, P3, P5, P6 are vertical points defining the top and bottom eyelid
 
 ### **Step-by-Step Breakdown**
 1. Compute the **vertical distance** between **P2 and P6**
@@ -41,9 +41,11 @@ Where:
 The **Mouth Aspect Ratio (MAR)** detects excessive **mouth opening**, which is an indicator of **yawning** (a common fatigue sign).
 
 ### **Mathematical Formula**
+
 $$
 MAR = \frac{\|P3 - P7\| + \|P2 - P6\|}{2 \times \|P0 - P4\|}
 $$
+
 Where:
 
 -   P0 and P4 are the corners of the mouth (horizontal)
