@@ -27,7 +27,7 @@ The SFC consists of **three main components**:
 - Works **both day and night**
 - **Compatible with glasses** (minimizing reflection issues)
 
-### **2. Edge AI Processing Unit **
+### **2.Edge AI Processing Unit**
 - Runs real-time fatigue detection algorithms
 - Compatible with:
   - **Raspberry Pi**
@@ -36,14 +36,14 @@ The SFC consists of **three main components**:
   - No Internet connection required
   - Ultra-fast processing with low latency
 
-### **3. Detection Algorithms **
+### **3.Detection Algorithms**
 - **Facial landmark detection** with OpenCV and deep learning
 - **Eye Aspect Ratio (EAR):** Identifies prolonged eye closure
 - **Mouth Aspect Ratio (MAR):** Detects yawning
 - **Head Pose Analysis:**
   - If the head tilts forward or sideways → Increased fatigue risk.
 
-### **4. Alert System **
+### **4.Alert System**
 - **Sound alerts** (buzzer or voice prompt
 - **Seat or steering wheel vibration**
 - **Message display on the dashboard screen**
