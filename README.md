@@ -55,7 +55,7 @@ The SFC consists of **three main components**:
 - **Buzzer and/or LED for alerts**
 - **(Optional) Accelerometer/Gyroscope for additional head movement data**
 
-### ** Software Installation**
+### **Software Installation**
 #### **Clone the GitHub Repository**
 ```bash
 git clone https://github.com/SomnoCam/Driver-Fatigue-Monitoring-System.git
