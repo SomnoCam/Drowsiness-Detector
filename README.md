@@ -22,7 +22,7 @@ Only continuous, objective monitoring can prevent fatigue-related crashes
 ##  **System Architecture**
 The SFC consists of **three main components**:
 
-### **1. Infrared (IR) Camera **
+### **1. Infrared (IR) Camera**
 - Continuously captures the driver’s face
 - Works **both day and night**
 - **Compatible with glasses** (minimizing reflection issues)
