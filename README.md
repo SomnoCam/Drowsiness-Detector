@@ -2,6 +2,7 @@
 
 ## **Introduction**
 **SomnoCam** or the **Driver Drowsiness Detector** is a **prototype project** aimed at exploring the feasibility of detecting driver drowsiness using computer vision and machine learning techniques
+
 The system is designed to study how real-time monitoring can identify **signs of drowsiness** and issue alerts before accidents occur
 
 ### ❗ **Disclaimer**  
