@@ -1,18 +1,18 @@
 # **Driver Drowsiness Detector**
 
 ## **Introduction**
-The **Driver Drowsiness Detector** is a **prototype project** aimed at exploring the feasibility of detecting driver drowsiness using computer vision and machine learning techniques
+**SomnoCam** or the **Driver Drowsiness Detector** is a **prototype project** aimed at exploring the feasibility of detecting driver drowsiness using computer vision and machine learning techniques
 The system is designed to study how real-time monitoring can identify **signs of drowsiness** and issue alerts before accidents occur
 
 ### ❗ **Disclaimer**  
  **This is a research prototype and NOT a finalised commercial solution**  
 The project is in its **development phase**, and further enhancements are needed for real-world deployment
 
-### **🛠️ Current Features**
+### **Current Features**
 The system detects:
-- **Prolonged eye closure**
-- **Frequent yawning**
-- **Abnormal head tilt (nodding off)**  
+- **eye closure**
+- **yawning**
+- **Abnormal head tilt**  
 
 When drowsiness is detected, the system triggers **immediate alerts** (sound, vibration, or visual) to help the driver stay alert or take a break
 
@@ -35,13 +35,13 @@ The prototype consists of **four main components**:
 - **Compatible with glasses** (minimizing reflection issues)
 
 ### **Edge AI Processing Unit**
-- Runs real-time fatigue detection algorithms
+- Runs real-time Drowsiness detection algorithms
 - Compatible with:
   - **Raspberry Pi 4**
-  - **NVIDIA Jetson** (for AI acceleration)
+  - **Google Coral AI Accelerator**
 - **Advantages:**
   - No Internet connection required
-  - Ultra-fast processing with low latency
+  - Ultra-fast processing
 
 ### **Detection Algorithms**
 - **Facial landmark detection** using OpenCV and deep learning
@@ -53,14 +53,12 @@ The prototype consists of **four main components**:
 ### **Alert System**
 - **Sound alerts** (buzzer or voice prompt)
 - **Seat or steering wheel vibration**
-- **Message display on the dashboard screen**
   
 ## **Installation**
 ### **Hardware Requirements**
-- **Raspberry Pi 4 (4GB RAM minimum)**
-- **IR Camera (NoIR Camera Module or IR Webcam)**
+- **Raspberry Pi 4**
+- **IR Camera)**
 - **Buzzer and/or LED for alerts**
-- **(Optional) Accelerometer/Gyroscope for additional head movement data**
 
 ### **Software Installation**
 #### **Clone the GitHub Repository**
