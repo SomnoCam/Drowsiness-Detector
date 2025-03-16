@@ -10,10 +10,9 @@ The system is designed to study how real-time monitoring can identify **signs of
 The project is in its **development phase**, and further enhancements are needed for real-world deployment
 
 ### **Current Features**
-The system detects:
-- **eye closure**
-- **yawning**
-- **Abnormal head tilt**  
+  - Detects drowsiness from static images
+  - Analyzes eye openness (EAR) and yawning (MAR) 
+  - Head pose estimation using OpenCV
 
 When drowsiness is detected, the system triggers **immediate alerts** (sound, vibration, or visual) to help the driver stay alert or take a break
 
@@ -27,39 +26,39 @@ When drowsiness is detected, the system triggers **immediate alerts** (sound, vi
 💡 **Traditional methods like drinking coffee or opening a window are ineffective**  
 A data-driven, AI-based approach could provide more reliable drowsiness detection
 
-## **System Architecture**
-The prototype consists of **four main components**:
+## **Current Prototype**
+This prototype consists of **image-based fatigue detection** using OpenCV and dlib
+and it consists of **four main components**
 
-### **Infrared (IR) Camera**
-- Captures real-time video of the driver’s face
-- Works **both day and night**
-- **Compatible with glasses** (minimizing reflection issues)
+### **Image Processing (No Real-Time Support Yet)**
+- Static image input only (JPEG, PNG, etc)
+- Detects drowsiness indicators in a single image
 
-### **Edge AI Processing Unit**
-- Runs real-time Drowsiness detection algorithms
-- Compatible with:
-  - **Raspberry Pi 4**
-  - **Google Coral AI Accelerator**
-- **Advantages:**
-  - No Internet connection required
-  - Ultra-fast processing
-
-### **Detection Algorithms**
-- **Facial landmark detection** using OpenCV and deep learning
-- **Eye Aspect Ratio (EAR):** Detects prolonged eye closure
+### **Detection Algorithms (Applied to Images)**
+- **Facial landmark detection** (dlib 68-point model)
+- **Eye Aspect Ratio (EAR):** Identifies closed eyes
 - **Mouth Aspect Ratio (MAR):** Detects yawning
-- **Head Pose Analysis:**  
-  - If the head tilts forward or sideways → Increased fatigue risk
+- **Head Pose Estimation:**  
+- If the head tilts forward or sideways → Fatigue likely
 
-### **Alert System**
-- **Sound alerts** (buzzer or voice prompt)
-- **Seat or steering wheel vibration**
-  
-## **Installation**
-### **Hardware Requirements**
-- **Raspberry Pi 4**
-- **IR Camera)**
-- **Buzzer and/or LED for alerts**
+## **Final Prototype Design**
+The goal of this project is to develop a **fully functional driver drowsiness detection system** capable of **real-time drowsiness monitoring** in vehicles. 
+This will involve **buying specialized hardware, optimizing algorithms, and adding new features**
+
+### **Planned Features & Upgrades**
+| Component | Current Status | Future Enhancements |
+|-----------|---------------|---------------------|
+| **Hardware** | No real hardware used yet, only image-based detection | Purchase and integrate **Raspberry Pi Camera** & **IR Camera** for real-time processing |
+| **Video Stream Processing** | Works only on static images | Implement **real-time video stream analysis** for continuous fatigue monitoring |
+| **Detection Algorithms** | Basic EAR, MAR, and Head Pose using OpenCV | Upgrade to **deep learning models (CNN, LSTM)** for **higher accuracy** |
+| **AI & Machine Learning** | Rule-based thresholds for EAR/MAR | Train a **custom dataset** and use **gaze tracking** for improved detection |
+| **Alert System** | No alerts implemented yet | Add **buzzer, LED warning system, or seat vibration motor** |
+| **Hardware Performance** | Runs on standard PC / Raspberry Pi | Optimize performance for **low-latency processing** on **Jetson Nano** |
+| **User Interface** | No UI | Create a **dashboard to display fatigue alerts** |
+| **Mobile & Cloud Integration** | No mobile app or cloud features | Develop a **mobile app** for real-time notifications & **journalisation** |
+
+**The final prototype will be a compact, AI-powered edge device capable of real-time driver monitoring and fatigue alerts**  
+**This system could help improve road safety by preventing accidents caused by drowsiness**
 
 ### **Software Installation**
 #### **Clone the GitHub Repository**
