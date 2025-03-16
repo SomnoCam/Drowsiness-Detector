@@ -1,56 +1,63 @@
-# **Driver Fatigue Monitoring System (SFC)**
+# **Driver Drowsiness Detector**
 
-##  **Introduction**
-The **Driver Fatigue Monitoring System (SFC)** is a prototype solution designed to detect driver drowsiness and issue real-time alerts to prevent accidents caused by fatigue. The system continuously monitors **signs of drowsiness**, such as:
+## **Introduction**
+The **Driver Drowsiness Detector** is a **prototype project** aimed at exploring the feasibility of detecting driver drowsiness using computer vision and machine learning techniques
+The system is designed to study how real-time monitoring can identify **signs of drowsiness** and issue alerts before accidents occur
+
+### ❗ **Disclaimer**  
+ **This is a research prototype and NOT a finalised commercial solution**  
+The project is in its **development phase**, and further enhancements are needed for real-world deployment
+
+### **🛠️ Current Features**
+The system detects:
 - **Prolonged eye closure**
 - **Frequent yawning**
-- **Abnormal head tilt**
+- **Abnormal head tilt (nodding off)**  
 
-**Link to Documentation on Canva**
-[SomnoCam](https://www.canva.com/design/DAGhVM_YV_U/DUiCkND-jsdqbEHmV9HLlg/edit?utm_content=DAGhVM_YV_U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+When drowsiness is detected, the system triggers **immediate alerts** (sound, vibration, or visual) to help the driver stay alert or take a break
 
-When drowsiness is detected, **immediate alerts** (sound, vibration, or visual) are activated to help the driver stay alert or take a break
+🔗 **[Link to Project Documentation](https://www.canva.com/design/DAGhVM_YV_U/DUiCkND-jsdqbEHmV9HLlg/edit?utm_content=DAGhVM_YV_U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
 
-##  **Why is this system essential?**
+## **Why is this Research Important**
 - **18%** of fatal accidents are linked to driver fatigue
 - **6,700 deaths** in 2021 in the U.S. were caused by drowsy driving
-- After **20 hours without sleep**, a driver’s performance is as impaired as having an illegal blood alcohol level
+- After **20 hours without sleep**, a driver’s reaction time is as slow as someone with an illegal blood alcohol level
 
- **Common solutions like drinking coffee or listening to music are ineffective**  
-Only continuous, objective monitoring can prevent fatigue-related crashes
+💡 **Traditional methods like drinking coffee or opening a window are ineffective**  
+A data-driven, AI-based approach could provide more reliable drowsiness detection
 
-##  **System Architecture**
-The SFC consists of **three main components**:
+## **System Architecture**
+The prototype consists of **four main components**:
 
-### **1. Infrared (IR) Camera**
-- Continuously captures the driver’s face
+### **Infrared (IR) Camera**
+- Captures real-time video of the driver’s face
 - Works **both day and night**
 - **Compatible with glasses** (minimizing reflection issues)
 
-### **2.Edge AI Processing Unit**
+### **Edge AI Processing Unit**
 - Runs real-time fatigue detection algorithms
 - Compatible with:
-  - **Raspberry Pi**
+  - **Raspberry Pi 4**
   - **NVIDIA Jetson** (for AI acceleration)
 - **Advantages:**
   - No Internet connection required
   - Ultra-fast processing with low latency
 
-### **3.Detection Algorithms**
-- **Facial landmark detection** with OpenCV and deep learning
-- **Eye Aspect Ratio (EAR):** Identifies prolonged eye closure
+### **Detection Algorithms**
+- **Facial landmark detection** using OpenCV and deep learning
+- **Eye Aspect Ratio (EAR):** Detects prolonged eye closure
 - **Mouth Aspect Ratio (MAR):** Detects yawning
-- **Head Pose Analysis:**
-  - If the head tilts forward or sideways → Increased fatigue risk.
+- **Head Pose Analysis:**  
+  - If the head tilts forward or sideways → Increased fatigue risk
 
-### **4.Alert System**
-- **Sound alerts** (buzzer or voice prompt
+### **Alert System**
+- **Sound alerts** (buzzer or voice prompt)
 - **Seat or steering wheel vibration**
 - **Message display on the dashboard screen**
-
-##  **Installation**
-### **1️ Hardware Requirements**
-- **Raspberry Pi 4 (minimum 4GB RAM)**
+  
+## **Installation**
+### **Hardware Requirements**
+- **Raspberry Pi 4 (4GB RAM minimum)**
 - **IR Camera (NoIR Camera Module or IR Webcam)**
 - **Buzzer and/or LED for alerts**
 - **(Optional) Accelerometer/Gyroscope for additional head movement data**
