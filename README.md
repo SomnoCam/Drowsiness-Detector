@@ -1,7 +1,7 @@
 # **Driver Fatigue Monitoring System (SFC)**
 
 ##  **Introduction**
-The **Driver Fatigue Monitoring System (SFC)** is an advanced solution designed to detect driver drowsiness and issue real-time alerts to prevent accidents caused by fatigue. The system continuously monitors **signs of drowsiness**, such as:
+The **Driver Fatigue Monitoring System (SFC)** is a prototype solution designed to detect driver drowsiness and issue real-time alerts to prevent accidents caused by fatigue. The system continuously monitors **signs of drowsiness**, such as:
 - **Prolonged eye closure**
 - **Frequent yawning**
 - **Abnormal head tilt**
